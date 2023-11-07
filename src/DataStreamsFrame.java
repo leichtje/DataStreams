@@ -46,9 +46,9 @@ public class DataStreamsFrame extends JFrame {
         Dimension screenSize = kit.getScreenSize();
         int screenHeight = screenSize.height;
         int screenWidth = screenSize.width;
-        setSize(3*(screenWidth / 4), 3*(screenHeight / 4));
+        setSize(5*(screenWidth / 6), 5*(screenHeight / 6));
         setLocationRelativeTo(null);
-        setResizable(false);
+        //setResizable(false);
         setTitle("Data Stream Search");
 
         setVisible(true);
@@ -82,8 +82,8 @@ public class DataStreamsFrame extends JFrame {
         leftArea.setEditable(false);
         rightArea.setEditable(false);
 
-        leftArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
-        rightArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
+        leftArea.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+        rightArea.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 
         leftPane = new JScrollPane(leftArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         rightPane = new JScrollPane(rightArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
